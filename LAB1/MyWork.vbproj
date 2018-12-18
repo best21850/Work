@@ -6,9 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{FC64FD7C-E184-4C0B-8801-6AE4E094100C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>LAB1.My.MyApplication</StartupObject>
-    <RootNamespace>LAB1</RootNamespace>
-    <AssemblyName>LAB1</AssemblyName>
+    <StartupObject>MyLab.My.MyApplication</StartupObject>
+    <RootNamespace>MyLab</RootNamespace>
+    <AssemblyName>MyLab</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>LAB1.xml</DocumentationFile>
+    <DocumentationFile>MyLab.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>LAB1.xml</DocumentationFile>
+    <DocumentationFile>MyLab.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -86,10 +86,22 @@
     <Compile Include="Form2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmJob4.Designer.vb">
+      <DependentUpon>frmJob4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmJob4.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmLab3.Designer.vb">
       <DependentUpon>frmLab3.vb</DependentUpon>
     </Compile>
     <Compile Include="frmLab3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLab5.Designer.vb">
+      <DependentUpon>frmLab5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLab5.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -115,8 +127,14 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmJob4.resx">
+      <DependentUpon>frmJob4.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLab3.resx">
       <DependentUpon>frmLab3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLab5.resx">
+      <DependentUpon>frmLab5.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
