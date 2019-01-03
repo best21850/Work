@@ -14,7 +14,7 @@
         decR_TAX = 0.07
         dblYearSalary = Val(txtSalary.Text) * 12
         dblBonus = Val(txtSale.Text * decR_BONUS)
-        dblAllIncome = Val(dblAllIncome + dblBonus)
+        dblAllIncome = Val(dblYearSalary + dblBonus)
         dblAllowance = Val(dblAllIncome * decR_ALLOW)
         dblTax = Val(dblAllIncome - dblAllowance) * decR_TAX
         lblYearSalary.Text = dblYearSalary

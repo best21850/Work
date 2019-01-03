@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FC64FD7C-E184-4C0B-8801-6AE4E094100C}</ProjectGuid>
+    <ProjectGuid>{9CA52F90-1CFD-4EA5-953F-3DD257F04E66}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>MyLab.My.MyApplication</StartupObject>
-    <RootNamespace>MyLab</RootNamespace>
-    <AssemblyName>MyLab</AssemblyName>
+    <StartupObject>frmLab8.Vb.My.MyApplication</StartupObject>
+    <RootNamespace>frmLab8.Vb</RootNamespace>
+    <AssemblyName>frmLab8.Vb</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>MyLab.xml</DocumentationFile>
+    <DocumentationFile>frmLab8.Vb.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>MyLab.xml</DocumentationFile>
+    <DocumentationFile>frmLab8.Vb.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -73,71 +73,17 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="frmLab8.Vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Form2.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmJob4.Designer.vb">
-      <DependentUpon>frmJob4.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmJob4.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmJob6.Designer.vb">
-      <DependentUpon>frmJob6.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmJob6.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmJob8.Designer.Vb">
-      <DependentUpon>frmJob8.Vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmJob8.Vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLab10.Designer.Vb">
-      <DependentUpon>frmLab10.Vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmLab10.Vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLab3.Designer.vb">
-      <DependentUpon>frmLab3.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmLab3.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLab5.Designer.vb">
-      <DependentUpon>frmLab5.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmLab5.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLab7.Designer.vb">
-      <DependentUpon>frmLab7.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmLab7.vb">
+    <Compile Include="frmLab8.Designer.vb">
+      <DependentUpon>frmLab8.Vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
-    </Compile>
-    <Compile Include="My Project\frmLab8.designer.vb">
-      <DependentUpon>frmLab8.Vb</DependentUpon>
-    </Compile>
-    <Compile Include="My Project\frmLab8.Vb">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -151,34 +97,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmJob4.resx">
-      <DependentUpon>frmJob4.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmJob6.resx">
-      <DependentUpon>frmJob6.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmJob8.resx">
-      <DependentUpon>frmJob8.Vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLab10.resx">
-      <DependentUpon>frmLab10.Vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLab3.resx">
-      <DependentUpon>frmLab3.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLab5.resx">
-      <DependentUpon>frmLab5.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLab7.resx">
-      <DependentUpon>frmLab7.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="My Project\frmLab8.resx">
+    <EmbeddedResource Include="frmLab8.resx">
       <DependentUpon>frmLab8.Vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">

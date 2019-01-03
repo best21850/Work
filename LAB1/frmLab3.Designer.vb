@@ -43,12 +43,12 @@ Partial Class frmLab3
         Me.lblBYellow = New System.Windows.Forms.Label()
         Me.lblBBrown = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lblFSky = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.lblBSky = New System.Windows.Forms.Label()
+        Me.lblBwhite = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.lblFSky = New System.Windows.Forms.Label()
-        Me.lblBwhite = New System.Windows.Forms.Label()
-        Me.lblBSky = New System.Windows.Forms.Label()
         Me.Btdown = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -74,6 +74,7 @@ Partial Class frmLab3
         '
         'cbosize
         '
+        Me.cbosize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbosize.FormattingEnabled = True
         Me.cbosize.Items.AddRange(New Object() {"12", "14", "16", "18", "20", "22", "24", "26", "28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50"})
         Me.cbosize.Location = New System.Drawing.Point(287, 173)
@@ -236,6 +237,14 @@ Partial Class frmLab3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "ForeColor"
         '
+        'lblFSky
+        '
+        Me.lblFSky.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.lblFSky.Location = New System.Drawing.Point(178, 83)
+        Me.lblFSky.Name = "lblFSky"
+        Me.lblFSky.Size = New System.Drawing.Size(33, 23)
+        Me.lblFSky.TabIndex = 4
+        '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.lblBSky)
@@ -255,6 +264,23 @@ Partial Class frmLab3
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "BgColor"
         '
+        'lblBSky
+        '
+        Me.lblBSky.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.lblBSky.ForeColor = System.Drawing.Color.Black
+        Me.lblBSky.Location = New System.Drawing.Point(168, 83)
+        Me.lblBSky.Name = "lblBSky"
+        Me.lblBSky.Size = New System.Drawing.Size(33, 23)
+        Me.lblBSky.TabIndex = 5
+        '
+        'lblBwhite
+        '
+        Me.lblBwhite.BackColor = System.Drawing.Color.White
+        Me.lblBwhite.Location = New System.Drawing.Point(129, 83)
+        Me.lblBwhite.Name = "lblBwhite"
+        Me.lblBwhite.Size = New System.Drawing.Size(33, 23)
+        Me.lblBwhite.TabIndex = 4
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -272,31 +298,6 @@ Partial Class frmLab3
         Me.Label2.Size = New System.Drawing.Size(72, 17)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "ขนาดฟอนต์"
-        '
-        'lblFSky
-        '
-        Me.lblFSky.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.lblFSky.Location = New System.Drawing.Point(178, 83)
-        Me.lblFSky.Name = "lblFSky"
-        Me.lblFSky.Size = New System.Drawing.Size(33, 23)
-        Me.lblFSky.TabIndex = 4
-        '
-        'lblBwhite
-        '
-        Me.lblBwhite.BackColor = System.Drawing.Color.White
-        Me.lblBwhite.Location = New System.Drawing.Point(129, 83)
-        Me.lblBwhite.Name = "lblBwhite"
-        Me.lblBwhite.Size = New System.Drawing.Size(33, 23)
-        Me.lblBwhite.TabIndex = 4
-        '
-        'lblBSky
-        '
-        Me.lblBSky.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.lblBSky.ForeColor = System.Drawing.Color.Black
-        Me.lblBSky.Location = New System.Drawing.Point(168, 83)
-        Me.lblBSky.Name = "lblBSky"
-        Me.lblBSky.Size = New System.Drawing.Size(33, 23)
-        Me.lblBSky.TabIndex = 5
         '
         'Btdown
         '
